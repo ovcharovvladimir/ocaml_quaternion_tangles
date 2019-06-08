@@ -1,6 +1,6 @@
 ## Environment
 
-It's highly recommended to [install Nix](https://nixos.org/nix/download.html "Getting Nix").
+It's highly recommended to [install Nix](https://nixos.org/nix/download.html).
 
 - E.g.
 ```shell
