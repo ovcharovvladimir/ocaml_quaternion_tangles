@@ -1,0 +1,11 @@
+(library
+ (name math)
+ (public_name quaternion-tangles.math)
+ (flags
+  (:standard -ppx ../../_opam/lib/ppx_implicits/ppx_implicits -ppx
+    ../../_opam/lib/ppx_implicits/ppx_implicits_type_reduction -ppx
+    ../../_opam/lib/ppx_implicits/ppx_implicits_final_check))
+ (preprocess
+  (action
+   (run /bin/bash ../../scripts/macro01.sh %{input-file})))
+ (libraries ppx_implicits.runtime))
