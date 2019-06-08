@@ -1,8 +1,13 @@
+(dirs .submodules)
+
+(include_subdirs unqualified)
+
 (library
  (name math)
  (public_name quaternion-tangles.math)
  (flags
-  (:standard -ppx ../../_opam/lib/ppx_implicits/ppx_implicits -ppx
+  (:standard -ppx "../../_opam/lib/ppx_monadic/ppx.exe --as-ppx" -ppx
+    ../../_opam/lib/ppx_implicits/ppx_implicits -ppx
     ../../_opam/lib/ppx_implicits/ppx_implicits_type_reduction -ppx
     ../../_opam/lib/ppx_implicits/ppx_implicits_final_check))
  (preprocess
