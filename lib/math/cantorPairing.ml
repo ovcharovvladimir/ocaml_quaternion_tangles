@@ -15,3 +15,6 @@ module Make (N : Number.S) = struct
     / of_int 24
     + fold3 x y z
 end
+
+module Default = Make (Number.Float)
+include Default
